@@ -1,6 +1,6 @@
 # Pingertron Homebrew Tap
 
-Homebrew tap for https://github.com/micktwomey/pingertron
+[Homebrew](https://brew.sh) tap for https://github.com/micktwomey/pingertron
 
 ## How do I install these formulae?
 
