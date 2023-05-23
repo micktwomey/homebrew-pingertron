@@ -7,8 +7,6 @@ class Pingertron < Formula
   sha256 "f8b9623f9f7d7e02aa09fa174ced559633bb58f21bb7f7a976cb39702f825847"
   license "MIT"
 
-  # option "with-root", "Runs pingertron service as root."
-
   depends_on "python@3.11"
 
   resource "anyio" do
@@ -132,23 +130,19 @@ class Pingertron < Formula
   end
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
     virtualenv_install_with_resources
-    # venv = virtualenv_create(libexec, "python3.11")
-    # venv.pip_install resources
-    # venv.pip_install_and_link buildpath
 
     (buildpath/"pingertron.args").write <<~EOS
       #{etc}/pingertron.yml
     EOS
 
     (buildpath/"pingertron.yml").write <<~EOS
-    interval_seconds: 60
-    probes:
-      - protocol: http
-        url: https://www.google.ie/
-      - protocol: icmp
-        hostname: 192.168.1.1
+      interval_seconds: 60
+      probes:
+        - protocol: http
+          url: https://www.google.ie/
+        - protocol: icmp
+          hostname: 192.168.1.1
     EOS
 
     etc.install "pingertron.args", "pingertron.yml"
@@ -170,9 +164,7 @@ class Pingertron < Formula
   service do
     run [opt_bin/"pingertron_brew_services"]
     keep_alive false
-    # if build.with? "root"
     require_root true
-    # end
     log_path var/"log/pingertron.log"
     error_log_path var/"log/pingertron.err.log"
   end
