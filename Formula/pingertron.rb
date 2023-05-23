@@ -6,6 +6,7 @@ class Pingertron < Formula
   url "https://files.pythonhosted.org/packages/44/98/d1402bc93ffad751905be63419338abb6d05d6887386af335ca4703f8ffc/pingertron-0.1.0.tar.gz"
   sha256 "f8b9623f9f7d7e02aa09fa174ced559633bb58f21bb7f7a976cb39702f825847"
   license "MIT"
+  revision 1
 
   depends_on "python@3.11"
 
