@@ -8,6 +8,12 @@ class Pingertron < Formula
   license "MIT"
   revision 1
 
+  bottle do
+    root_url "https://ghcr.io/v2/micktwomey/pingertron"
+    sha256 cellar: :any_skip_relocation, ventura:      "0c12c7099b089acdcf80ca724e99b8beadcaa797f93aa908bd81e31cb59fc57d"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7995522a63f2772eb71ecbe5238f9f15cd5f044ee527d65a53221a9769152540"
+  end
+
   depends_on "python@3.11"
 
   resource "anyio" do
