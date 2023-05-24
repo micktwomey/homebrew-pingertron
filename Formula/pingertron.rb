@@ -3,10 +3,9 @@ class Pingertron < Formula
 
   desc "Pings URLs and machines and keeps metrics of how reachable they are"
   homepage "https://github.com/micktwomey/pingertron"
-  url "https://files.pythonhosted.org/packages/44/98/d1402bc93ffad751905be63419338abb6d05d6887386af335ca4703f8ffc/pingertron-0.1.0.tar.gz"
-  sha256 "f8b9623f9f7d7e02aa09fa174ced559633bb58f21bb7f7a976cb39702f825847"
+  url "https://files.pythonhosted.org/packages/e0/1f/6d66f6c35ad307f78d6b05c3fd46c6bdbbe53ea41cf9826254e793484a31/pingertron-0.2.0.tar.gz"
+  sha256 "9149737dc2bad90b651db7ee38449324c35176bbcb1f740e779762fc43a71c7b"
   license "MIT"
-  revision 1
 
   bottle do
     root_url "https://ghcr.io/v2/micktwomey/pingertron"
@@ -37,8 +36,8 @@ class Pingertron < Formula
   end
 
   resource "httpcore" do
-    url "https://files.pythonhosted.org/packages/a3/b8/5a0ebcb51cea6f86c4c2520e606018675dc1c9f4c3419356bfd8adc9fc76/httpcore-0.17.1.tar.gz"
-    sha256 "caf508597c525f9b8bfff187e270666309f63115af30f7d68b16143a403c8356"
+    url "https://files.pythonhosted.org/packages/b3/ad/7002a6f8e6ce0a246c991e00ba79b26ad06d307421a160214df24de5651f/httpcore-0.17.2.tar.gz"
+    sha256 "125f8375ab60036db632f34f4b627a9ad085048eef7cb7d2616fea0f739f98af"
   end
 
   resource "httpx" do
@@ -82,8 +81,8 @@ class Pingertron < Formula
   end
 
   resource "pydantic" do
-    url "https://files.pythonhosted.org/packages/43/5f/e53a850fd32dddefc998b6bfcbda843d4ff5b0dcac02a92e414ba6c97d46/pydantic-1.10.7.tar.gz"
-    sha256 "cfc83c0678b6ba51b0532bea66860617c4cd4251ecf76e9846fa5a9f3454e97e"
+    url "https://files.pythonhosted.org/packages/23/65/2aa13873e9e0084ecaec00fbe6c6096b65e1ab99ba66bdbf7e4e7c4cc915/pydantic-1.10.8.tar.gz"
+    sha256 "1410275520dfa70effadf4c21811d755e7ef9bb1f1d077a21958153a92c8d9ca"
   end
 
   resource "pydantic-yaml" do
@@ -127,8 +126,8 @@ class Pingertron < Formula
   end
 
   resource "typing-extensions" do
-    url "https://files.pythonhosted.org/packages/d3/20/06270dac7316220643c32ae61694e451c98f8caf4c8eab3aa80a2bedf0df/typing_extensions-4.5.0.tar.gz"
-    sha256 "5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb"
+    url "https://files.pythonhosted.org/packages/aa/67/f4e6ae6998b0c86ab10f8e96339f00afaf30bef11f63a81c63977c2b89d7/typing_extensions-4.6.1.tar.gz"
+    sha256 "558bc0c4145f01e6405f4a5fdbd82050bd221b119f4bf72a961a1cfd471349d6"
   end
 
   resource "zipp" do
