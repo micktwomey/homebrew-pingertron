@@ -8,6 +8,5 @@ bump-formula-pr pypi-tar-gz-url sha256:
   brew bump-formula-pr \
     --url={{pypi-tar-gz-url}} \
     --sha256={{sha256}} \
-    --write-only \
     --no-fork \
     Formula/pingertron.rb
