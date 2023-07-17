@@ -9,8 +9,8 @@ class Pingertron < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/micktwomey/pingertron"
-    sha256 cellar: :any_skip_relocation, ventura:      "c380df847c99cfe496fd6f68c5223c929913d84fd8c4d673ef314281e1a335a0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "a19f4c682c26876a421db9afa7295004a871822054bcfc46c6c054f1065f1462"
+    sha256 cellar: :any_skip_relocation, ventura:      "ecb5f4f1b95d66b0afc98373568de072ff9a0de2c020dbcf3ba623c074188fb2"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "455484e4630fd088e5c97785d4d0442f20ff44e464d0a2ae81567d5f69d3ce66"
   end
 
   depends_on "python@3.11"
